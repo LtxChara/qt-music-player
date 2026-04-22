@@ -34,7 +34,7 @@
 
 **1. 登录页面**：
 
-<img src="pic/loginPage.png" alt="登录页面" style="zoom: 50%;" />
+<img src="pic/loginPage.png" alt="登录页面" style="zoom: 33%;" />
 
 **2. 管理员页面**：
 
