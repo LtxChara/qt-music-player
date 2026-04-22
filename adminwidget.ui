@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminWidget</class>
+ <widget class="QWidget" name="adminWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>411</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="searchUserEdit">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+border-radius:10px;
+	font: 14pt &quot;Adobe Arabic&quot;;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string> search...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton_1">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>90</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/new/prefix1/pic/search_icon.png);
+	border-radius: 10px;
+	background-color:rgb(37, 113, 255);	
+	border-style:outset;
+}
+
+QPushButton:hover
+{
+  border-radius:10px;
+  color:black;
+  background-color: rgb(13, 97, 200);
+  border-color: rgba(255, 255, 255,200);
+}
+
+QPushButton:pressed{
+	border-image: url(:/new/prefix1/pic/search_icon.png);
+	border-radius: 10px;
+	background-color:rgb(37, 113, 255);	
+	border-style:inset;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>12</width>
+      <height>12</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userInfoLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 87 14pt &quot;Arial Black&quot;;
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>Manage User Information</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableView" name="userInfoTable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>391</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createUserButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>390</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton
+{
+border-radius:10px;
+	color:white;
+   background-color: green;
+   border-style:outset;
+   font-style:MingLiU-ExtB;
+   font-size:22px;
+   font: bold;
+}
+
+QPushButton:hover
+{
+border-radius:10px;
+	color:black;
+  background-color: rgba(100, 255, 100, 100);
+  border-color: rgba(255, 255, 255,200);
+}
+
+QPushButton:pressed
+{
+border-radius:10px;
+	color:white;
+   background-color:rgba(44, 47, 47, 50);
+   border-style:inset;
+   font-style:MingLiU-ExtB;
+   font-size:22px;
+   font: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showAllUserButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>390</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:white;
+    border-radius:10px;
+	background-color: rgb(13, 97, 200);
+    border-style:outset;
+    font-style:MingLiU-ExtB;
+    font-size:22px;
+    font: bold;
+}
+
+QPushButton:hover{
+	border-radius:10px;
+	color:black;
+	background-color:rgb(210, 255, 255);
+	border-color: rgba(255, 255, 255,200);
+}
+
+QPushButton:pressed{
+	border-radius:10px;
+	color:white;
+	background-color:rgb(37, 113, 255);	
+	border-style:inset;
+	font-style:MingLiU-ExtB;
+	font-size:22px;
+	font: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Show All</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="adminTopicLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>261</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 40pt &quot;Arial Black&quot;;
+color: purple;</string>
+   </property>
+   <property name="text">
+    <string>Admin</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>479</x>
+     <y>99</y>
+     <width>391</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="songDataLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 87 14pt &quot;Arial Black&quot;;
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>Manage Song DataBase</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>90</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/new/prefix1/pic/search_icon.png);
+	border-radius: 10px;
+	background-color:rgb(37, 113, 255);	
+	border-style:outset;
+}
+
+QPushButton:hover
+{
+  border-radius:10px;
+  color:black;
+  background-color: rgb(13, 97, 200);
+  border-color: rgba(255, 255, 255,200);
+}
+
+QPushButton:pressed{
+	border-image: url(:/new/prefix1/pic/search_icon.png);
+	border-radius: 10px;
+	background-color:rgb(37, 113, 255);	
+	border-style:inset;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchSongEdit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+border-radius:10px;
+	font: 14pt &quot;Adobe Arabic&quot;;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string> search...</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="songDataTable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>371</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addSongButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>390</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton
+{
+border-radius:10px;
+	color:white;
+   background-color: green;
+   border-style:outset;
+   font-style:MingLiU-ExtB;
+   font-size:22px;
+   font: bold;
+}
+
+QPushButton:hover
+{
+border-radius:10px;
+color:black;
+background-color: rgba(100, 255, 100, 100);
+border-color: rgba(255, 255, 255,200);
+}
+
+QPushButton:pressed
+{
+border-radius:10px;
+	color:white;
+   background-color:rgba(44, 47, 47, 50);
+   border-style:inset;
+   font-style:MingLiU-ExtB;
+   font-size:22px;
+   font: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showAllSongButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:white;
+    border-radius:10px;
+	background-color: rgb(13, 97, 200);
+    border-style:outset;
+    font-style:MingLiU-ExtB;
+    font-size:22px;
+    font: bold;
+}
+
+QPushButton:hover{
+	border-radius:10px;
+	color:black;
+	background-color:rgb(210, 255, 255);
+	border-color: rgba(255, 255, 255,200);
+}
+
+QPushButton:pressed{
+	border-radius:10px;
+	color:white;
+	background-color:rgb(37, 113, 255);	
+	border-style:inset;
+	font-style:MingLiU-ExtB;
+	font-size:22px;
+	font: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Show All</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>searchSongEdit</zorder>
+   <zorder>songDataLabel</zorder>
+   <zorder>searchButton_2</zorder>
+   <zorder>songDataTable</zorder>
+   <zorder>addSongButton</zorder>
+   <zorder>showAllSongButton</zorder>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>20</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

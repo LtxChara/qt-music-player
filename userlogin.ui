@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>userLogin</class>
+ <widget class="QDialog" name="userLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>349</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="loginFrame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>311</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="topicLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+color: purple;</string>
+    </property>
+    <property name="text">
+     <string>MusicPlayer Login</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernameEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="placeholderText">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+      background:#ced1d8;
+      border-style:outset;
+      border-radius:10px;
+      font-style:MingLiU-ExtB;
+      font-size:16px;
+      font: bold;
+}
+
+                  QPushButton:hover{
+                          background-color: rgba(100, 255, 100, 100);
+                          border-color: rgba(255, 255, 255,200);
+                          color:rgba(0,0,0,200);
+                  }
+
+
+
+                  QPushButton:pressed
+                  {
+                     background-color:rgba(44, 47, 47, 50);
+                    border-style:inset;
+                    font-style:MingLiU-ExtB;
+                    font-size:16px;
+                    font: bold;
+                 }</string>
+    </property>
+    <property name="text">
+     <string>Sign in</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="remindRegisterLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>251</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Do not have an account? Register here:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="remindAdminLoginlabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>291</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>If you are an Administrator, please login here:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="registerButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+                  {
+                   background:#ced1d8;
+                   border-style:outset;
+                                   border-radius:10px;
+                                   font-style:MingLiU-ExtB;
+                                   font-size:16px;
+                                   font: bold;
+                                   }
+
+                  QPushButton:hover{
+                          background-color: rgba(100, 255, 100, 100);
+                          border-color: rgba(255, 255, 255,200);
+                          color:rgba(0,0,0,200);
+                  }
+
+
+
+                  QPushButton:pressed
+                  {
+                     background-color:rgba(44, 47, 47, 50);
+                    border-style:inset;
+                    font-style:MingLiU-ExtB;
+                    font-size:16px;
+                    font: bold;
+                 }</string>
+    </property>
+    <property name="text">
+     <string>Sign up</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toAdminLoginButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+                  {
+                   background:#ced1d8;
+                   border-style:outset;
+                                   border-radius:10px;
+                                   font-style:MingLiU-ExtB;
+                                   font-size:16px;
+                                   font: bold;
+                                   }
+
+                  QPushButton:hover{
+                          background-color: rgba(100, 255, 100, 100);
+                          border-color: rgba(255, 255, 255,200);
+                          color:rgba(0,0,0,200);
+                  }
+
+
+
+                  QPushButton:pressed
+                  {
+                     background-color:rgba(44, 47, 47, 50);
+                    border-style:inset;
+                    font-style:MingLiU-ExtB;
+                    font-size:16px;
+                    font: bold;
+                 }</string>
+    </property>
+    <property name="text">
+     <string>Administrator Sign in</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

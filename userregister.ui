@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>userRegister</class>
+ <widget class="QDialog" name="userRegister">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>348</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="loginFrame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>311</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="registerTopicLabel">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>0</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+color: purple;</string>
+    </property>
+    <property name="text">
+     <string>Register</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="registerUsernameEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="registerPasswordEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background:#ced1d8;
+	border-style:outset;
+	border-radius:10px;
+	font-style:MingLiU-ExtB;
+	font-size:16px;
+	font: bold;
+ }
+
+QPushButton:hover{
+	background-color: rgba(100, 255, 100, 100);
+	border-color: rgba(255, 255, 255,200);
+	color:rgba(0,0,0,200);
+}
+
+QPushButton:pressed{
+	background-color:rgba(44, 47, 47, 50);
+	border-style:inset;
+	font-style:MingLiU-ExtB;
+	font-size:16px;
+	font: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="registerUsernameLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Username:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="registerPasswordLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Password:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ensurePasswordLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Ensure your password:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ensurePasswordEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="registerSureButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton
+                  {
+                   background:#ced1d8;
+                   border-style:outset;
+                                   border-radius:10px;
+                                   font-style:MingLiU-ExtB;
+                                   font-size:16px;
+                                   font: bold;
+                                   }
+
+                  QPushButton:hover{
+                          background-color: rgba(100, 255, 100, 100);
+                          border-color: rgba(255, 255, 255,200);
+                          color:rgba(0,0,0,200);
+                  }
+
+
+
+                  QPushButton:pressed
+                  {
+                     background-color:rgba(44, 47, 47, 50);
+                    border-style:inset;
+                    font-style:MingLiU-ExtB;
+                    font-size:16px;
+                    font: bold;
+                 }</string>
+    </property>
+    <property name="text">
+     <string>Sure</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QCheckBox" name="classicalCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Classical</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="jazzCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Jazz</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="rockCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>10</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rock</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="popCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pop</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="bluesCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Blues</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="electronicCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>40</y>
+       <width>81</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Electronic</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="countryCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Country</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="folkCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>70</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Folk</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="hiphopCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>70</y>
+       <width>73</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hip-Hop</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>241</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Please choose 3 of your favourite types:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
