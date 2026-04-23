@@ -74,18 +74,18 @@
 ```text
 MusicPlayer4/
 |
-├── MusicPlayer4.pro          # qmake 项目配置文件
+├── MusicPlayer4.pro           # qmake 项目配置文件
 ├── main.cpp                   # 程序入口：初始化数据库、加载默认歌曲、启动登录窗口
 |
-├── widget.h / widget.cpp      # 主界面逻辑：播放控制、歌单展示、推荐算法、用户交互
-├── musicplayer.h / musicplayer.cpp     # 曲库播放器（数据库歌曲）：独立 DB 连接
-├── mymusicplayer.h / mymusicplayer.cpp   # 本地播放器（本地文件）：支持进度控制
-├── mythread.h / mythread.cpp    # 子线程：将秒数格式化为 mm:ss 时间字符串
+├── widget.h / widget.cpp                   # 主界面逻辑：播放控制、歌单展示、推荐算法、用户交互
+├── musicplayer.h / musicplayer.cpp         # 曲库播放器（数据库歌曲）：独立 DB 连接
+├── mymusicplayer.h / mymusicplayer.cpp     # 本地播放器（本地文件）：支持进度控制
+├── mythread.h / mythread.cpp               # 子线程：将秒数格式化为 mm:ss 时间字符串
 |
 ├── userlogin.h / userlogin.cpp / userlogin.ui    # 用户登录对话框
-├── userregister.h / userregister.cpp       # 用户注册对话框
-├── adminlogin.h / adminlogin.cpp         # 管理员登录对话框
-├── adminwidget.h / adminwidget.cpp        # 管理员后台管理界面
+├── userregister.h / userregister.cpp             # 用户注册对话框
+├── adminlogin.h / adminlogin.cpp                 # 管理员登录对话框
+├── adminwidget.h / adminwidget.cpp               # 管理员后台管理界面
 |
 ├── myQSS.h                    # 全局 QSS 样式定义（按钮、列表、滑块等）
 ├── images.qrc                 # Qt 资源文件：图标、GIF 背景图
